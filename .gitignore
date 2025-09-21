@@ -1,0 +1,30 @@
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Virtual Environments ---
+env/
+venv/
+.venv/
+
+# --- Environment Variables ---
+.env
+*.env
+
+
+# --- Logs & Databases ---
+*.log
+*.sqlite3
+*.db
+
+# --- OS Generated Files ---
+.DS_Store
+Thumbs.db
+
+# --- IDEs & Editors ---
+.vscode/
+.idea/
+*.iml
+
