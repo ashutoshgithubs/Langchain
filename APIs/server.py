@@ -20,8 +20,8 @@ app=FastAPI(
 gemma_model=Ollama(model="gemma3:1b")
 llama_model=Ollama(model="llama3.2:1b")
 
-prompt1=ChatPromptTemplate.from_template("Write me an essay about {topic} in 100 words")
-prompt2=ChatPromptTemplate.from_template("Write me an poem about {topic} for a 5 years child in 100 words")
+prompt1=ChatPromptTemplate.from_template("Write me the answer on the {topic}")
+prompt2=ChatPromptTemplate.from_template("Write me the answer on the {topic}")
 
 add_routes(
     app,
