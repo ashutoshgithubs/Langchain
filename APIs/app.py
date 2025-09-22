@@ -9,12 +9,12 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-app=FastAPI(
+app = FastAPI(
     title="Langchain Server",
     version="1.0",
-    decsription="A simple API Server"
-
+    description="A simple API Server"
 )
+
 
 
 gemma_model=Ollama(model="gemma3:1b")

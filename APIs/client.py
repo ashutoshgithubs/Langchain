@@ -4,8 +4,9 @@ import streamlit as st
 def get_gemma_response(input_text):
     response=requests.post("http://localhost:8000/essay/invoke",
     json={'input':{'topic':input_text}})
-
-    return response.json()['output']['content']
+    # print(response.text)
+    # return response.json()['output']['content']
+    return response.json()['output'] 
 
 def get_llama_response(input_text):
     response=requests.post(
