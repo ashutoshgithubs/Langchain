@@ -1,0 +1,23 @@
+# Python files: use LF line endings
+*.py text eol=lf
+
+# Jupyter notebooks: treat as text and enforce LF
+*.ipynb text eol=lf
+
+# Markdown files: LF endings
+*.md text eol=lf
+
+# JSON files: LF endings
+*.json text eol=lf
+
+# YAML / configuration files
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Ignore binary files from line ending conversion
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary

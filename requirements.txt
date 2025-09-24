@@ -6,3 +6,10 @@ langserve
 uvicorn
 fastapi
 sse-starlette
+bs4
+ipykernel
+chromadb
+pypdf
+langchain-ollama
+
+
