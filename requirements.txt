@@ -11,5 +11,9 @@ ipykernel
 chromadb
 pypdf
 langchain-ollama
+arxiv
+langchainhub
+wikipedia
+
 
 
