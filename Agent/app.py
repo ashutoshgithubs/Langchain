@@ -4,6 +4,8 @@
 # Sources: Wikipedia, Arxiv, LangSmith Docs
 # ===========================================
 
+# Ollama models will be giving parsing error as it won't follow the exact prompts [ action / action-input]
+# ===========================================
 from langchain_community.tools import WikipediaQueryRun, ArxivQueryRun
 from langchain_community.utilities import WikipediaAPIWrapper, ArxivAPIWrapper
 from langchain_community.document_loaders import WebBaseLoader
@@ -13,8 +15,6 @@ from langchain_ollama import OllamaLLM, OllamaEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain.agents import initialize_agent, AgentType
 
-import os
-os.environ["USER_AGENT"] = "AdvancedRAGAgent/1.0"
 
 # -------------------------------------------
 # 1️⃣ Wikipedia Tool (General Knowledge)
