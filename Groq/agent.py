@@ -18,8 +18,8 @@ load_dotenv()
 groq_api_key = os.environ["GROQ_API_KEY"]
 web_url = os.environ["website_url"]
 
-st.set_page_config(page_title="Multi-Source Agent", page_icon="🧠")
-st.title("🧠 ChatGroq - The Multi-Source Agent")
+st.set_page_config(page_title="GroqFusion", page_icon="🧠")
+st.title("⚡ GroqFusion - The Multi-Source AI Agent")
 
 # ------------------ Load LLM ------------------ #
 llm = ChatGroq(
