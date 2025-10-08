@@ -16,5 +16,8 @@ langchainhub
 wikipedia
 langchain_groq
 sentence-transformers
-
+cassio
+groq
+beautifulsoup4
+langchain_groq
 
