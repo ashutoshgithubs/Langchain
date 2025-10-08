@@ -19,7 +19,8 @@ st.markdown("Ask questions from the US Census documents (2022) using AI-powered 
 
 # access_token = os.environ["HUGGINGFACEHUB_API_TOKEN"]
 os.environ["HUGGINGFACEHUB_API_TOKEN"] = os.getenv("HUGGINGFACEHUB_API_TOKEN", "")
-login(token=os.getenv("HUGGINGFACEHUB_API_TOKEN"))
+# login(token=os.getenv("HUGGINGFACEHUB_API_TOKEN"))
+# os.environ["HUGGINGFACEHUB_API_TOKEN"] = ""
 
 # Load the data
 @st.cache_resource(show_spinner=True)
@@ -100,3 +101,4 @@ if st.button("Ask"):
             #         st.write(doc.page_content)
     else:
         st.warning("⚠️ Please enter a question before submitting.")
+
